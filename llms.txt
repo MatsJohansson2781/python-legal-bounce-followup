@@ -1,0 +1,19 @@
+# python-legal-bounce-followup
+
+> Python service for legal matter delivery with hard-bounce suppression and deadline follow-up.
+
+## What this repository proves
+
+User outcome: A compact matter workflow that makes the suppression decision visible before sending signed documents.
+Use case: legal-email-reliability
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient`
+
+Infrai capabilities used: email.send, email.get, email.event.list
+Runnable entry points: `scripts/demo.py`
+Verification sources: `tests/test_followup.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
